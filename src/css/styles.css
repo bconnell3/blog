@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    background-color: #FFFDF9;
+    color: #5D5658;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-family: "Geologica", sans-serif;
+}
+
+h1 {
+    font-family: "Playwrite US Trad", cursive;
+    font-weight: 400;
+    font-size: 1.9531rem;
+}
