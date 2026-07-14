@@ -1,8 +1,11 @@
 ---
-layout: ../layouts/BaseLayout.astro
+layout: ../../layouts/BaseLayout.astro
 title: 'Side Projects & Taking My Own Advice'
 date: 2026-07-08
+description: "I've been teaching web design and development in post-secondary for 9 years now. Two parts of this job stand out as my favorites. The first is the fundamentals course, where I get to welcome newbies into the wonderful world of HTML and CSS. The second is the final capstone course, where I get to mentor students through that nerve-wracking leap into industry. We've all been there at the beginning."
 ---
+## Side Projects & Taking My Own Advice
+
 I've been teaching web design and development in post-secondary for 9 years now. Two parts of this job stand out as my favorites. The first is the fundamentals course, where I get to welcome newbies into the wonderful world of HTML and CSS. The second is the final capstone course, where I get to mentor students through that nerve-wracking leap into industry. We've all been there at the beginning.
 
 When students ask what they can do to improve their chances of getting a job, side projects are the first thing I recommend.
