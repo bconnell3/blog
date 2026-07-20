@@ -1,19 +1,124 @@
-* {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
 }
 
 body {
-    background-color: #FFFDF9;
-    color: #5D5658;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    font-family: "Geologica", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+:root {
+  --neutral-00: #ffffff;
+  /* --neutral-10: #fffcf5; */
+  --neutral-10: #fffbf2;
+  --neutral-20: rgba(230, 228, 224, 0.8);
+  --neutral-30: #7d7373;
+  --neutral-40: #5d5658;
+  --primary-20: #efcd51;
+  --primary-30: #c1a540;
+  --primary-40: #a68f36;
+  --secondary: #453b4a;
+
+  --spacing-xs: 1rem;
+  --spacing-s: 1.875rem;
+  --spacing-m: 3.75rem;
+  --spacing-l: 5.625rem;
+  --spacing-xl: 7.5rem;
+}
+
+body {
+    background-color: var(--neutral-10);
+    color: var(--neutral-40);
+    font-size: clamp(1.125rem, 1.0966rem + 0.142vw, 1.25rem);
+    font-family: 'Geologica Variable', sans-serif;
 }
 
 h1 {
     font-family: "Playwrite US Trad", cursive;
     font-weight: 400;
     font-size: 1.9531rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: clamp(3.275rem, 2.0719rem + 6.0156vw, 8.5687rem); 
+    color: var(--secondary);
+    text-transform: uppercase;
+    text-decoration: underline var(--primary-30) clamp(0.5rem, 0.3864rem + 0.5682vw, 1rem);
+    margin-bottom: var(--spacing-s);
+}
+
+h3 {
+    font-weight: 400;
+    font-size: clamp(2.0225rem, 1.279rem + 3.7173vw, 5.29375rem);
+    color: var(--secondary);
+    line-height: 1;
+}
+
+p {
+    margin-bottom: var(--spacing-s);
+    max-width: 55rem;
+}
+
+.inner-container {
+    padding: 60px 16px;
+    max-width: 1566px;
+    margin: 0 auto;
+}
+
+a {
+    color: var(--primary-40);
+    font-weight: 600;
+    &:hover {
+        color: var(--primary-30);
+    }
+}
+
+.divider {
+    height: 2px;
+    background-color: var(--neutral-20);
+}
+
+@media (width > 900px) {
+    .flex {
+        display: flex;
+        gap: var(--spacing-s);
+    }
+
+    .divider {
+        width: 2px;
+        height: 100vh;
+    }
 }

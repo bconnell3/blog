@@ -10,18 +10,20 @@ const sortedPosts = allPosts.sort((a: any, b: any) =>
 <BaseLayout>
 
   <section>
-				<h2>Articles</h2>
-        {allPosts.map((post: any) => <ArticleCard title={post.frontmatter.title} date={post.frontmatter.date} desc={post.frontmatter.description} url={post.url} />)}
-			</section>
+	<h2>Articles</h2>
+    	{allPosts.map((post: any) => <ArticleCard title={post.frontmatter.title} date={post.frontmatter.date} desc={post.frontmatter.description} url={post.url} />)}
+	</section>
 
-			<section>
-				<h2>About</h2>
-				<p>I've been teaching web design and development for the past nine years. I'm originally self-taught, and that background keeps me curious, I genuinely enjoy continuing to learn new tools and approaches alongside my students. While I can both design and develop, I find myself drawn most to UI design and front-end, CSS-focused development, where visual thinking and clean code meet. I'm a bit of a purist at heart, but I understand the need for efficiency, and everything is a balancing act.</p>
+	<div class="divider"></div>
 
-				<h3>Resources & Readings</h3>
-				<p>Here are some of my favourite recommendations:</p>
-				<ul>
-					<li><a href="https://www.youtube.com/kevinpowell">Kevin Powell YouTube</a> ~ A top favourite with all my students.</li>
-				</ul>
-			</section>
+	<section>
+		<h2>About</h2>
+		<p>I've been teaching web design and development for the past nine years. I'm originally self-taught, and that background keeps me curious, I genuinely enjoy continuing to learn new tools and approaches alongside my students. While I can both design and develop, I find myself drawn most to UI design and front-end, CSS-focused development, where visual thinking and clean code meet. I'm a bit of a purist at heart, but I understand the need for efficiency, and everything is a balancing act.</p>
+
+		<h3>Resources & Readings</h3>
+		<p>Here are some of my favourite recommendations:</p>
+		<ul>
+			<li><a href="https://www.youtube.com/kevinpowell">Kevin Powell YouTube</a> ~ A top favourite with all my students.</li>
+		</ul>
+	</section>
 </BaseLayout>

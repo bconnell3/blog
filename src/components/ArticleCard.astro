@@ -21,10 +21,31 @@ function truncate(str: string, maxLength: number = 315) {
   return trimmed.slice(0, trimmed.lastIndexOf(' ')) + '…';
 }
 ---
+<style>
+  article {
+    margin-bottom: 60px;
+    .date {
+      margin-left: 20px;
+      font-family: "Playwrite US Trad", cursive;
+      color: #7d7373;
+    }
+    .btn {
+      padding: 16px 30px;
+      background-color: #efcd51;
+      color: #453b4a;
+      text-decoration: none;
+      font-size: clamp(1rem, 0.9716rem + 0.142vw, 1.125rem);
+      border-radius: 6px;
+      &:hover {
+        background-color: #f2d773;
+      }
+    }
+  }
+</style>
 
 <article>
     <h3>{title}</h3>
-    <p>{formatDate(date)}</p>
+    <p class="date">{formatDate(date)}</p>
     <p>{truncate(desc)}</p>
-    <a href={url}>Read More</a>
+    <a class="btn" href={url}>Read More</a>
 </article>
