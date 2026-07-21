@@ -41,8 +41,8 @@ h1, h2, h3, h4, h5, h6 {
 
 :root {
   --neutral-00: #ffffff;
-  /* --neutral-10: #fffcf5; */
-  --neutral-10: #fffbf2;
+  --neutral-10: #FFFDF9;
+  /* --neutral-10: #fffbf2; */
   --neutral-20: rgba(230, 228, 224, 0.8);
   --neutral-30: #7d7373;
   --neutral-40: #5d5658;
