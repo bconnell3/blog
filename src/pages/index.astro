@@ -12,7 +12,7 @@ const sortedPosts = allPosts.sort((a: any, b: any) =>
 
   <section>
 	<h2>Articles</h2>
-    	{allPosts.map((post: any) => <ArticleCard title={post.frontmatter.title} date={post.frontmatter.date} desc={post.frontmatter.description} url={post.url} />)}
+    	{allPosts.map((post: any) => <ArticleCard title={post.frontmatter.title} date={post.frontmatter.date} desc={post.frontmatter.description} url={post.url} linktext={post.frontmatter.linktext} />)}
 	</section>
 
 	<div class="divider"></div>

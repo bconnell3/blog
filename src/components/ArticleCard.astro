@@ -1,5 +1,5 @@
 ---
-const {title, date, desc, url} = Astro.props;
+const {title, date, desc, url, linktext} = Astro.props;
 
 function getOrdinalSuffix(day: number) {
   const rules = new Intl.PluralRules('en-US', { type: 'ordinal' });
@@ -47,5 +47,5 @@ function truncate(str: string, maxLength: number = 315) {
     <h3>{title}</h3>
     <p class="date">{formatDate(date)}</p>
     <p>{truncate(desc)}</p>
-    <a class="btn" href={url}>Read More</a>
+    <a class="btn" href={url}>{linktext}</a>
 </article>
