@@ -1,14 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
-const pageTitle = "UI Design"
+const pageTitle = "Bridgette's UI Design, HTML, & CSS Blog";
 const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 const sortedPosts = allPosts.sort((a: any, b: any) =>
   new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime()
 );
 ---
 
-<BaseLayout>
+<BaseLayout pageTitle={pageTitle}>
 
   <section>
 	<h2>Articles</h2>
